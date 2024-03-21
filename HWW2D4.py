@@ -51,8 +51,8 @@ print()
 # They have to guess which item in the list was selected. 
 # Use random.choice() to select the item and take the user's guess via input. 
 # Provide feedback on whether they guessed correctly or not.
-ltr = ["A", "B"]
-# ltr = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
+
+ltr = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
 secret_ltr = random.choice(ltr)
 guess = input(f"Guess a letter from {ltr[0]} to {ltr[-1]}: ").upper()
 guess_cnt = 1
