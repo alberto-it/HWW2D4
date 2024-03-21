@@ -51,8 +51,8 @@ print()
 # They have to guess which item in the list was selected. 
 # Use random.choice() to select the item and take the user's guess via input. 
 # Provide feedback on whether they guessed correctly or not.
-
-ltr = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
+ltr = ["A", "B"]
+# ltr = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
 secret_ltr = random.choice(ltr)
 guess = input(f"Guess a letter from {ltr[0]} to {ltr[-1]}: ").upper()
 guess_cnt = 1
@@ -79,8 +79,10 @@ print()
 # Convert the for loop from Task 1 into a while loop. Ensure it performs the same function 
 # but also includes a condition to stop the loop if a certain genre is played for instance Hip-hop.
 i = 0
-while genres[i] != "Classical":
+while i < len(genres):
     print("Track", i+1, ": Now Playing", genres[i])
+    if genres[i] == "Hip-hop":
+        i = len(genres) # to exit
     i += 1
 # Task 3: Light Show Technician Loop
 print()
@@ -89,8 +91,9 @@ print()
 # Modify the loop to skip a genre if it's not suitable for the light show, 
 # for instance Classical genre.
 for i in range(len(genres)):
-    if genres[i] != "Classical":
-        print("Track", i+1, ": Light show ready for", genres[i])
+    if genres[i] == "Classical":
+        continue
+    print("Track", i+1, ": Light show ready for", genres[i])
 
 # 6. Advanced Looping 
 print()
