@@ -107,9 +107,7 @@ for genre in genres[1:4]:
 print()
 # Use a list comprehension to create a new list that contains each genre 
 # with the word "Music" appended to it. Print this new list.
-comprehension = []
-for genre in genres:
-    comprehension.append(genre + " Music")
+comprehension = [genre + " Music" for genre in genres]
 print(comprehension)
 # Task 3: Numerical Beats with range
 print()
