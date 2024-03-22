@@ -82,7 +82,7 @@ i = 0
 while i < len(genres):
     print("Track", i+1, ": Now Playing", genres[i])
     if genres[i] == "Hip-hop":
-        i = len(genres) # to exit
+        break
     i += 1
 # Task 3: Light Show Technician Loop
 print()
