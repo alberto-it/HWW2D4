@@ -21,10 +21,10 @@ Example Outcome: An example would be "On Tuesday afternoon you were sad"
 "On Tuesday night you were happy" "On Wednesday morning you were tired"
 """
 times = ['morning','afternoon','night']
-for i in range(7):
+for day in days:
     for time in times:
         mood = random.choice(moods)
-        print(f"On {days[i]} {time}, you were {mood}.")
+        print(f"On {day} {time}, you were {mood}.")
 print()
 """
 3. Loop Condition Logic
